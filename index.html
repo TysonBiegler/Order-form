@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FCC:Survey From Project</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/125df990b1.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+<div class="container">    
+    <header id="header">
+      <div id="nav">
+        <a class="active" href="#header">Home</a>
+        <a href="#survey-form">Survey</a>
+        <a href="#footer">Contact</a>
+      </div>
+      <div id="titleHead">
+        <h1 id="title">Tesla Purchse Form</h1>
+        <p id="description">Complete the form below to place your order.</p>
+      </div>
+    </header>
+    
+
+    <div class="formContainer">
+        <form id="survey-form">
+          <div class="customerInfo">
+            <div class="form-group">
+              <label id="name-label" for="name">Name</label>
+              <br>
+              <input id="name" type="text" name="name" placeholder="Name"
+              required>
+            </div>
+            <div class="form-group">
+              <label id="email-label" for="email">Email</label>
+              <br>
+              <input id="email" type="email" name="email" placeholder="Email" required>
+            </div>
+
+            <div class="form-group">
+              <label id="number-label" for="number">Age (optional)</label>
+              <br>
+              <input type="number" name="age" id="number" min="0" max="120"
+              placeholder="Age">
+            </div>
+          </div>
+          <div class="carInfo">
+
+            <div class="type">
+              <label id="name-label" for="dropdown"
+                >Which Tesla would you like to purchase?</label>
+                <br>
+              <select id="dropdown" name="role" required>
+                <option disable selected value>Select One</option>
+                <option value="modelS">Model S</option>
+                <option value="model3">Model 3</option>
+                <option value="modelX">Model X</option>
+                <option value="modelY">Model Y</option>
+                <option value="cyberTruck">Cyber Truck</option>
+                <option value="roadster">Roadster</option>
+              </select>
+            </div>
+            <div class="color">
+              <label for="color">Select a color for your Tesla</label>
+              <br>
+              <input
+                name="color"
+                value="white"
+                type="radio"
+                class="input-radio"
+                checked
+              />White
+              <br>
+              <input
+                name="color"
+                value="red"
+                type="radio"
+                class="input-radio"
+              />Red
+              <br>
+              <input
+                name="color"
+                value="black"
+                type="radio"
+                class="input-radio"
+              />Black
+              <br>
+              <input
+                name="color"
+                value="blue"
+                type="radio"
+                class="input-radio"
+              />Blue
+            </div>
+
+            <div class="features">
+              <input
+                id="checkbox"
+                type="checkbox""
+                name="features"
+                value="autoPilot"
+              />
+              <label for="checkbox">Full self driving (Auto pilot) + $10,000</label>
+              <br>
+              <input
+                id="checkbox"
+                type="checkbox"
+                name="features"
+                value="dualMotor"
+              />
+              <label for="checkbox">Dual motor (all wheel drive) + $9,000</label>
+              <br>
+              <input
+                id="checkbox"
+                type="checkbox"
+                name="features"
+                value="battery"
+              />
+              <label for="checkbox">Long range (Enhanced battery) + $7,500</label>
+            </div>
+            
+            
+            <div id="comments">  
+                <label id="textArea-label" for="instructions">Additional Comments</label>
+                <br>
+                <textarea id="textArea-label" name="instructions" rows="8" cols="65"></textarea>
+                </textarea>
+                <br>
+                <input id="submit" type="submit" value="Place Order">
+            </div>
+          </div>
+         
+        </form>
+      </div>
+
+      <div id="footer">
+        <div class="contactUs">
+             <h4>contact us</h4>
+              <h6>Phone: 123-456-7891
+                <br>
+                Address: 123 first st, town State 12345
+                <br>
+                Support: <a class="link" href="email">email us</a>
+              </h6>
+        </div>
+        <div id="copyright">
+          <a class="link" href="#">Link1</a>
+          <a class="link" href="#">Link2</a>
+          <a class="link" href="#">Link3</a>
+          <a class="link" href="#">Link4</a>
+          <br>   
+          <h6>©Tyson Biegler 2021</h6> 
+        </div>
+      </div>
+</div>  
+</body>
+</html>
